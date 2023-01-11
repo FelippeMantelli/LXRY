@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/src/styles.css">
+    <link rel="stylesheet" href="/assets/src/screenHome/home.css">
+    <meta https-equiv="Content-Security-Policy" content="img-src 'self'">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>LXRY | Home</title>
+</head>
+<body>
+    <header>
+        <!--O header está vazio pois vi um template de sobreposição de navbar, existem modificações no arquivo css referenciando apenas a tag header aplicando essas modificações-->
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">LXRY</a>
+            <!--Botão que aparece quando a tela fica menor para acessar o menu-->
+            <button class="navbar-toggler"
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Air</a>
+                        <ul class="dropdown-menu bg-light border-0">
+                            <li><a class="dropdown-item bg-transparent" href="/assets/src/screenJets/jets.html">Jets</a></li>
+                            <li><a class="dropdown-item bg-transparent" href="/assets/src/screenHelicopters/Helicopters.html">Helicopters</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Land</a>
+                        <ul class="dropdown-menu bg-light border-0">
+                            <li><a class="dropdown-item bg-transparent" href="/assets/src/screenCars/cars.html">Cars</a></li>
+                            <li><a class="dropdown-item bg-transparent" href="/assets/src/screenHouses/houses.html">Houses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Water</a>
+                        <ul class="dropdown-menu bg-light border-0">
+                            <li><a class="dropdown-item bg-transparent" href="/assets/src/screenYatch/yatch.html">Yatch<span class="badge text-bg-info">New</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container my-5 d-grid gap-2 text-center">
+            <h1 class="fs-2 fw-bold">Welcome to LXRY, let us provide you the best highlife experience</h1>
+            <h2 class="fs-4">
+                We take care of everything and you just enjoy it
+            </h2>
+        </div>
+        <div class="container my-5">
+            <h3 class="fs-5">If you need any further information use the form below to contact our team </h3>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Full Name</span>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">E-mail</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">budget</span>
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">How is the perfect vacation</span>
+                <textarea class="form-control" placeholder="Yatch with helicopter on a private island..." aria-label="With textarea"></textarea>
+            </div>
+            <button type="button" class="btn btn-outline-dark my-3">Submit</button>
+        </div>
+        <div class="container my-5 d-grid gap-2 text-center">
+            <h2 class="fs-2 fw-bold">Frequently Asked Questions</h2>
+        </div>
+        <div class="container accordion my-3" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What if my reservation gets canceled?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quas a totam, dolor corporis praesentium perferendis dicta id voluptate, aperiam laborum blanditiis necessitatibus expedita. Odio laboriosam iste tenetur quia fugiat quos corrupti est cumque nihil obcaecati incidunt quo, dolor tempora velit ullam! Perspiciatis accusantium asperiores error eligendi nihil dolore! In!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    I am a pilot, can I fly the plane/helicopter?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis ipsam iste quasi fuga officia optio architecto maiores asperiores alias itaque sequi sint corrupti ipsum veniam, magnam ut repudiandae esse. Voluptas ut modi ad obcaecati commodi exercitationem nesciunt maiores quidem iusto vitae quia consectetur veritatis, ipsam hic earum tempore nobis?
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I land my helicopter on the yatch?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quibusdam aliquid neque ducimus rerum nesciunt suscipit omnis mollitia quas natus quia pariatur distinctio, quae veritatis quisquam dolorem eveniet quasi repellat ea quam, atque ratione. Rerum, sint numquam hic natus saepe quia ducimus dicta culpa repellendus impedit earum vel quo beatae?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 mb-4">
+            <h2 class="fs-4 text-center">
+                You like privacy?
+        </div>
+        <div class="d-flex flex-column container mb-5">
+            <img class="rounded " src="https://i.insider.com/5958b2c77ba1360b7d628f85?width=1200&format=jpeg" class="img-fluid" alt="A private island">
+            <div>
+                <p class="fs-6"><strong>Check out our new privete island!</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, est! Quo, nulla perspiciatis similique consequuntur aspernatur earum magnam voluptatum aperiam assumenda! Obcaecati, dolores eum. Mollitia eum quam unde deserunt possimus nihil, perspiciatis dignissimos impedit minus inventore facilis nostrum. Dicta, enim!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container text-center py-5 text-white">
+            Since 2023 
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="/assets/src/script.js"></script>
+</body>
+</html>

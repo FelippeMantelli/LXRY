@@ -1,0 +1,50 @@
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    font-size: 16px;
+}
+
+.navbar-light .navbar-brand{
+    color: black;
+    font-size: 30px;
+}
+
+footer{
+    background-color:rgb(34, 34, 34);
+    box-shadow: 0px -3px 10px lightslategrey;
+}
+
+@media only screen and (max-width: 800px){
+    header{
+        background-position: 40% 66%;
+    }
+    carousel slide{
+        background-position: 40% 66%;
+    }
+    table{
+        background-position: 40% 66%;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .carouselImg{
+        height: 90vh !important;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .carouselImg{
+        height: 80vh !important;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .carouselImg{
+        height: 50vh !important;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .carouselImg{
+        height: 30vh !important;
+    }
+}
